@@ -1,5 +1,5 @@
 import discord
-import googletrans
+import papago
 import os
 from pprint import pprint
 # 輸入自己Bot的TOKEN碼
@@ -22,7 +22,7 @@ async def on_message(message):
         return
     
     if client.user in message.mentions: # @判定
-        translator = googletrans.Translator()
+        translator = papago.Translator()
         robotName = client.user.name
         first, space, content = message.clean_content.partition('@'+robotName+' ')
         
