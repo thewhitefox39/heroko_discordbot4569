@@ -1,2 +1,2 @@
 discord.py[voice]>=1.4.1
-googletrans==4.0.0-rc1
+papago==1.0.0
